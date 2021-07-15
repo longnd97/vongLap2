@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTien = parseInt(prompt("Nhập số tiền gửi"));
+    let soThang = parseInt(prompt("Nhập số tháng cho vay"));
+    let laiSuatHangThang = 3 / 100;
+    for (let i = 0; i < soThang; i++) {
+        soTien += soTien * laiSuatHangThang
+    }
+    alert(soTien)
+</script>
+</body>
+</html>
